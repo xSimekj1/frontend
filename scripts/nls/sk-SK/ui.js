@@ -21,6 +21,10 @@ define({
         dashboard: {
             this: "Prehľad"
         },
+        
+        example: {
+            this: "Skuska"
+        },
         cases: {
             this: "Inštancie",
             my: "Moje Inštancie",

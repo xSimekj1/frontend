@@ -16,6 +16,12 @@
                 &nbsp;({{mainCtrl.counters.cases.display}})
             </span>
         </md-button>
+        
+        <md-button href="/example" layout="row" layout-align="start center"
+                   ng-class="{active: ('example' | routeSegmentContains)}"
+                   ng-click="mainCtrl.closeSidenav('left-nav');mainCtrl.navigationClick('example')">
+            <i class="material-icons">developer_board</i>{{::$i18n.page.example.this}}
+        </md-button>
 
         <md-button href="/mycases" layout="row" layout-align="start center"
                    ng-class="{active: ('mycases' | routeSegmentContains)}"

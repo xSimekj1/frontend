@@ -32,6 +32,9 @@ define({
                 my: "My cases",
                 all: "All cases"
             },
+            example: {
+                    this: "Examples"
+            },
             cases: {
                 this: "Cases",
                 my: "My cases",

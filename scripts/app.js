@@ -50,6 +50,7 @@ define('app', ['angular', 'config', 'angularMaterial', 'angularHal', 'angularCur
                 .when('/recover/:token', 'recover')
                 .when('/dashboard', 'app.dashboard')
                 .when('/cases', 'app.cases')
+                .when('/example', 'app.example')
                 .when('/mycases', 'app.mycases')
                 .when('/console', 'app.console')
                 .when('/profile', 'app.profile')
@@ -68,6 +69,12 @@ define('app', ['angular', 'config', 'angularMaterial', 'angularHal', 'angularCur
                     templateUrl: "views/app/cases.html",
                     controller: 'CasesController',
                     controllerAs: 'caseCtrl'
+                })
+                .segment('example', {
+                    default: true,
+                    templateUrl: "views/app/exampleView.html",
+                    controller: 'ExampleController',
+                    controllerAs: 'exampleCtrl'
                 })
                 .segment('mycases', {
                     templateUrl: "views/app/mycases.html",

@@ -127,6 +127,15 @@ define([], function () {
                 taskPriority: true,
                 taskCaseTitle: true
             },
+            example: {
+                viewId: "example",
+                countBadge: true,
+                transactions: true,
+
+                taskSearch: false,
+                taskPriority: true,
+                taskCaseTitle: true
+            },
             mycases: {
                 viewId: "mycases",
                 countBadge: true,
@@ -171,6 +180,12 @@ define([], function () {
             editProfile: false,
 
             cases: {
+                caseDelete: true,
+                allowHighlight: false,
+                autoOpenUnfinished: false,
+                fullReload: false
+            },
+            example: {
                 caseDelete: true,
                 allowHighlight: false,
                 autoOpenUnfinished: false,
