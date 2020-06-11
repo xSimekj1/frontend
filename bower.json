@@ -1,0 +1,41 @@
+{
+  "name": "msus",
+  "authors": [
+    "Milan Mladoniczky <milan.mladoniczky@stuba.sk>",
+    "Juraj Mažári <juraj.mazari@stuba.sk>",
+    "Gabriel Juhás <gabriel.juhas@stuba.sk>"
+  ],
+  "description": "Frontend application part of MSUS application engine",
+  "main": "",
+  "keywords": [
+    "wms",
+    "workflow",
+    "Petri net"
+  ],
+  "homepage": "https://student.interes.group",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.7.8",
+    "angular-animate": "^1.7.8",
+    "angular-aria": "^1.7.8",
+    "angular-currency-format": "^1.0.6",
+    "angular-hal": "^2.3.0",
+    "angular-inview": "^2.3.1",
+    "angular-material": "^1.1.18",
+    "angular-material-expansion-panel": "^0.7.2",
+    "angular-messages": "^1.7.8",
+    "angular-route": "^1.7.8",
+    "angular-route-segment": "^1.5.1",
+    "jquery": "^3.3.1",
+    "requirejs": "^2.3.6",
+    "requirejs-domReady": "^2.0.1",
+    "requirejs-i18n": "^2.0.6"
+  }
+}
