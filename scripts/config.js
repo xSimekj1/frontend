@@ -95,10 +95,10 @@ define([], function () {
         theme: "default",
         imageSrc: {
             auth: {
-                gtXs: "../../assets/default/logo_fei.png",
-                xs: "../../assets/default/logo_fei.png"
+                gtXs: "../../assets/default/tplogo.png",
+                xs: "../../assets/default/tplogo.png"
             },
-            mainToolbar: "../../assets/default/top_logo_fei_sk_nove.png",
+            mainToolbar: "../../assets/default/booking.png",
             sidenav: "../../assets/default/logo_fei.png"
         },
         defaults: {
