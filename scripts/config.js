@@ -136,6 +136,24 @@ define([], function () {
                 taskPriority: true,
                 taskCaseTitle: true
             },
+            filter: {
+                viewId: "filter",
+                countBadge: true,
+                transactions: true,
+
+                taskSearch: false,
+                taskPriority: true,
+                taskCaseTitle: true
+            },
+            transactions: {
+                viewId: "transactions",
+                countBadge: true,
+                transactions: true,
+
+                taskSearch: false,
+                taskPriority: true,
+                taskCaseTitle: true
+            },
             payments: {
                 viewId: "payments",
                 countBadge: true,
@@ -195,6 +213,18 @@ define([], function () {
                 fullReload: false
             },
             listings: {
+                caseDelete: true,
+                allowHighlight: false,
+                autoOpenUnfinished: false,
+                fullReload: false
+            },
+            filter: {
+                caseDelete: true,
+                allowHighlight: false,
+                autoOpenUnfinished: false,
+                fullReload: false
+            },
+            transactions: {
                 caseDelete: true,
                 allowHighlight: false,
                 autoOpenUnfinished: false,

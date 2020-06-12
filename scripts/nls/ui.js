@@ -35,6 +35,12 @@ define({
             listings: {
                 this: "Listings"
             },
+            filter: {
+                this: "Filter"
+            },
+            transactions: {
+                this: "Transactions"
+            },
             payments: {
                 this: "Payments"
             },

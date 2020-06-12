@@ -51,6 +51,8 @@ define('app', ['angular', 'config', 'angularMaterial', 'angularHal', 'angularCur
                 .when('/dashboard', 'app.dashboard')
                 .when('/cases', 'app.cases')
                 .when('/listings', 'app.listings')
+                .when('/filter', 'app.filter')
+                .when('/transactions', 'app.transactions')
                 .when('/payments', 'app.payments')
                 .when('/mycases', 'app.mycases')
                 .when('/console', 'app.console')
@@ -76,6 +78,18 @@ define('app', ['angular', 'config', 'angularMaterial', 'angularHal', 'angularCur
                     templateUrl: "views/app/listingsView.html",
                     controller: 'ListingsController',
                     controllerAs: 'listingsCtrl'
+                })
+                .segment('filter', {
+                    default: true,
+                    templateUrl: "views/app/filterView.html",
+                    controller: 'FilterController',
+                    controllerAs: 'filterCtrl'
+                })
+                .segment('transactions', {
+                    default: true,
+                    templateUrl: "views/app/transactionsView.html",
+                    controller: 'TransactionsController',
+                    controllerAs: 'transactionsCtrl'
                 })
                 .segment('payments', {
                     default: true,

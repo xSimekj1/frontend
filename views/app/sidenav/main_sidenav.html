@@ -23,6 +23,18 @@
             <i class="material-icons">list</i>{{::$i18n.page.listings.this}}
         </md-button>
 
+        <md-button href="/filter" layout="row" layout-align="start center"
+                ng-class="{active: ('filter' | routeSegmentContains)}"
+                ng-click="mainCtrl.closeSidenav('left-nav');mainCtrl.navigationClick('filter')">
+        <i class="material-icons">filter_alt</i>{{::$i18n.page.filter.this}}
+        </md-button>
+        
+        <md-button href="/transactions" layout="row" layout-align="start center"
+                ng-class="{active: ('transactions' | routeSegmentContains)}"
+                ng-click="mainCtrl.closeSidenav('left-nav');mainCtrl.navigationClick('transactions')">
+        <i class="material-icons">contactless</i>{{::$i18n.page.transactions.this}}
+        </md-button>
+        
         <md-button href="/payments" layout="row" layout-align="start center"
                 ng-class="{active: ('payments' | routeSegmentContains)}"
                 ng-click="mainCtrl.closeSidenav('left-nav');mainCtrl.navigationClick('payments')">

@@ -180,6 +180,12 @@ define(['./Tab', './Case', './Filter'], function (Tab, Case, Filter) {
         if (this.label == "Listings"){
             this.activeFilter.set("fullText", "listing");
         }
+        else if (this.label == "Filter"){
+            this.activeFilter.set("fullText", "filter");
+        }
+        else if (this.label == "Transactions"){
+            this.activeFilter.set("fullText", "TRS");
+        }
         else if (this.label == "Payments"){
             this.activeFilter.set("fullText", "PAY");
         }

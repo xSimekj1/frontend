@@ -25,6 +25,12 @@ define({
         listings: {
             this: "Ponuky"
         },
+        filter: {
+            this: "Vyhľadávanie"
+        },
+        transactions: {
+            this: "Transakcie"
+        },
         payments: {
             this: "Platby"
         },
