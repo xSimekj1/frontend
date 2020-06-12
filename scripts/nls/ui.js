@@ -32,8 +32,11 @@ define({
                 my: "My cases",
                 all: "All cases"
             },
-            example: {
-                    this: "Examples"
+            listings: {
+                this: "Listings"
+            },
+            payments: {
+                this: "Payments"
             },
             cases: {
                 this: "Cases",

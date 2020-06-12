@@ -1,31 +1,31 @@
 <div ng-cloak>
 
-	<md-tabs md-dynamic-height md-autoselect="true" md-border-bottom md-selected="exampleCtrl.activeTabIndex" class="background-tabs">
+	<md-tabs md-dynamic-height md-autoselect="true" md-border-bottom md-selected="paymentsCtrl.activeTabIndex" class="background-tabs">
 
-		<md-tab md-on-select="exampleCtrl.caseTab.activate()" class="primary">
+		<md-tab md-on-select="paymentsCtrl.caseTab.activate()" class="primary">
 
 			<md-tab-label>
-				{{::$i18n.page.cases.this}}
+				{{::$i18n.page.payments.this}}
 			</md-tab-label>
 
 			<md-tab-body>
 				<md-content layout="column" class="color-bg-transparent padding-2x">
 
-					<div ng-init="tab=exampleCtrl.caseTab" ng-include="'views/app/search_bars/case_search_bar.html'"></div>
+					<div ng-init="tab=paymentsCtrl.caseTab" ng-include="'views/app/search_bars/case_nav_bar.html'"></div>
 
 					<md-divider class="border-width-2x color-border-transparent"></md-divider>
 
 					<div flex layout="column">
 
-						<div ng-init="tab=exampleCtrl.caseTab" ng-include="'views/app/headers/case_data_header.html'"></div>
+						<div ng-init="tab=paymentsCtrl.caseTab" ng-include="'views/app/headers/case_data_header.html'"></div>
 
 						<md-divider class="border-width-2x color-border-transparent"></md-divider>
 
-						<div ng-init="tab=exampleCtrl.caseTab" ng-include="'views/app/lists/case_data_list.html'"></div>
+						<div ng-init="tab=paymentsCtrl.caseTab" ng-include="'views/app/lists/case_data_list.html'"></div>
 
 					</div> <!-- ./column -->
 
-					<div ng-if="!exampleCtrl.caseTab.loading && exampleCtrl.caseTab.cases.length === 0" layout="column" layout-align="center center" class="color-fg-material-grey-text">
+					<div ng-if="!paymentsCtrl.caseTab.loading && paymentsCtrl.caseTab.cases.length === 0" layout="column" layout-align="center center" class="color-fg-material-grey-text">
 						<md-divider class="border-width-default color-border-transparent"></md-divider>
 						<md-icon class="material-icons">storage</md-icon>
 						<md-divider class="border-width-2x color-border-transparent"></md-divider>
@@ -33,19 +33,19 @@
 						<md-divider class="border-width-2x color-border-transparent"></md-divider>
 					</div>
 
-					<div layout="row" layout-sm="column" layout-align="center center" class="padding-2x margin-2x" in-view="$inview&&exampleCtrl.caseTab.load(true)">
-						<md-progress-circular md-mode="indeterminate" ng-disabled="!exampleCtrl.caseTab.loading" class="progress-circular-stroke-primary-500" md-diameter="50"></md-progress-circular>
+					<div layout="row" layout-sm="column" layout-align="center center" class="padding-2x margin-2x" in-view="$inview&&paymentsCtrl.caseTab.load(true)">
+						<md-progress-circular md-mode="indeterminate" ng-disabled="!paymentsCtrl.caseTab.loading" class="progress-circular-stroke-primary-500" md-diameter="50"></md-progress-circular>
 					</div> <!-- ./row -->
 
 				</md-content>
 			</md-tab-body>
 		</md-tab>
 
-		<md-tab class="primary" ng-repeat="tab in exampleCtrl.taskTabs" md-on-select="exampleCtrl.tabChanged()">
+		<md-tab class="primary" ng-repeat="tab in paymentsCtrl.taskTabs" md-on-select="paymentsCtrl.tabChanged()">
 
 			<md-tab-label>
 				{{::tab.useCase.title}}
-				<md-icon class="material-icons cursor-pointer font-size-22" ng-click="exampleCtrl.closeTab(tab.useCase.stringId)">close</md-icon>
+				<md-icon class="material-icons cursor-pointer font-size-22" ng-click="paymentsCtrl.closeTab(tab.useCase.stringId)">close</md-icon>
 			</md-tab-label>
 
 			<md-tab-body>
@@ -73,7 +73,7 @@
 						<md-divider class="border-width-2x color-border-transparent"></md-divider>
 						<span class="font-size-20">{{::$i18n.page.cases.noTasksForThisCaseAvailable}}</span>
 						<md-divider class="border-width-default color-border-transparent"></md-divider>
-						<md-button class="md-button" ng-click="exampleCtrl.closeTab(tab.useCase.stringId)">{{::$i18n.block.btn.closeTab}}</md-button>
+						<md-button class="md-button" ng-click="paymentsCtrl.closeTab(tab.useCase.stringId)">{{::$i18n.block.btn.closeTab}}</md-button>
 					</div>
 
 					<div layout="row" layout-align="center center" class="padding-2x margin-2x">

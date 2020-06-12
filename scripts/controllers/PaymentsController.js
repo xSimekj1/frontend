@@ -1,6 +1,6 @@
 define(['angular', '../classes/CaseTab', '../classes/TaskTab', '../classes/Filter', '../modules/Cases', '../modules/Main', 'angularMaterialExpansionPanels'],
     function (angular, CaseTab, TaskTab, Filter) {
-        angular.module('ngCases').controller('ExampleController',
+        angular.module('ngCases').controller('PaymentsController',
             ['$log', '$scope', '$http', '$dialog', '$snackbar', '$user', '$fileUpload', '$timeout', '$mdExpansionPanelGroup', '$cache', '$i18n', '$rootScope', '$process', '$config', '$filterRepository',
                 function ($log, $scope, $http, $dialog, $snackbar, $user, $fileUpload, $timeout, $mdExpansionPanelGroup, $cache, $i18n, $rootScope, $process, $config, $filterRepository) {
                     const self = this;
@@ -10,7 +10,7 @@ define(['angular', '../classes/CaseTab', '../classes/TaskTab', '../classes/Filte
                     self.activeTab = undefined;
                     self.taskTabs = [];
                     self.caseHeaders = $user.getPreferenceCaseHeaders(self.viewId + "-" + CaseTab.HEADERS_PREFERENCE_KEY);
-                    self.caseTab = new CaseTab("Cases", this, $filterRepository.get(self.viewId), {
+                    self.caseTab = new CaseTab("Payments", this, $filterRepository.get(self.viewId), {
                         $http,
                         $dialog,
                         $snackbar,

@@ -17,10 +17,16 @@
             </span>
         </md-button>
         
-        <md-button href="/example" layout="row" layout-align="start center"
-                   ng-class="{active: ('example' | routeSegmentContains)}"
-                   ng-click="mainCtrl.closeSidenav('left-nav');mainCtrl.navigationClick('example')">
-            <i class="material-icons">developer_board</i>{{::$i18n.page.example.this}}
+        <md-button href="/listings" layout="row" layout-align="start center"
+                   ng-class="{active: ('listings' | routeSegmentContains)}"
+                   ng-click="mainCtrl.closeSidenav('left-nav');mainCtrl.navigationClick('listings')">
+            <i class="material-icons">list</i>{{::$i18n.page.listings.this}}
+        </md-button>
+
+        <md-button href="/payments" layout="row" layout-align="start center"
+                ng-class="{active: ('payments' | routeSegmentContains)}"
+                ng-click="mainCtrl.closeSidenav('left-nav');mainCtrl.navigationClick('payments')">
+        <i class="material-icons">credit_card</i>{{::$i18n.page.payments.this}}
         </md-button>
 
         <md-button href="/mycases" layout="row" layout-align="start center"

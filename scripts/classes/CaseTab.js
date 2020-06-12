@@ -177,6 +177,13 @@ define(['./Tab', './Case', './Filter'], function (Tab, Case, Filter) {
         else
             this.activeFilter.remove("fullText");
 
+        if (this.label == "Listings"){
+            this.activeFilter.set("fullText", "listing");
+        }
+        else if (this.label == "Payments"){
+            this.activeFilter.set("fullText", "PAY");
+        }
+
         const request = {
             method: "POST",
             url: next && this.page.next ? this.page.next : this.$config.getApiUrl(CaseTab.URL_SEARCH),

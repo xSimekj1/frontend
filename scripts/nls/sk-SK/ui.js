@@ -22,8 +22,11 @@ define({
             this: "Prehľad"
         },
         
-        example: {
-            this: "Skuska"
+        listings: {
+            this: "Ponuky"
+        },
+        payments: {
+            this: "Platby"
         },
         cases: {
             this: "Inštancie",

@@ -127,8 +127,17 @@ define([], function () {
                 taskPriority: true,
                 taskCaseTitle: true
             },
-            example: {
-                viewId: "example",
+            listings: {
+                viewId: "listings",
+                countBadge: true,
+                transactions: true,
+
+                taskSearch: false,
+                taskPriority: true,
+                taskCaseTitle: true
+            },
+            payments: {
+                viewId: "payments",
                 countBadge: true,
                 transactions: true,
 
@@ -185,7 +194,13 @@ define([], function () {
                 autoOpenUnfinished: false,
                 fullReload: false
             },
-            example: {
+            listings: {
+                caseDelete: true,
+                allowHighlight: false,
+                autoOpenUnfinished: false,
+                fullReload: false
+            },
+            payments: {
                 caseDelete: true,
                 allowHighlight: false,
                 autoOpenUnfinished: false,

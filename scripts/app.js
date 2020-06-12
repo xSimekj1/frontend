@@ -50,7 +50,8 @@ define('app', ['angular', 'config', 'angularMaterial', 'angularHal', 'angularCur
                 .when('/recover/:token', 'recover')
                 .when('/dashboard', 'app.dashboard')
                 .when('/cases', 'app.cases')
-                .when('/example', 'app.example')
+                .when('/listings', 'app.listings')
+                .when('/payments', 'app.payments')
                 .when('/mycases', 'app.mycases')
                 .when('/console', 'app.console')
                 .when('/profile', 'app.profile')
@@ -70,11 +71,17 @@ define('app', ['angular', 'config', 'angularMaterial', 'angularHal', 'angularCur
                     controller: 'CasesController',
                     controllerAs: 'caseCtrl'
                 })
-                .segment('example', {
+                .segment('listings', {
                     default: true,
-                    templateUrl: "views/app/exampleView.html",
-                    controller: 'ExampleController',
-                    controllerAs: 'exampleCtrl'
+                    templateUrl: "views/app/listingsView.html",
+                    controller: 'ListingsController',
+                    controllerAs: 'listingsCtrl'
+                })
+                .segment('payments', {
+                    default: true,
+                    templateUrl: "views/app/paymentsView.html",
+                    controller: 'PaymentsController',
+                    controllerAs: 'paymentsCtrl'
                 })
                 .segment('mycases', {
                     templateUrl: "views/app/mycases.html",
